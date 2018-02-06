@@ -4,94 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="app.css">
-    <title>Product Catalog</title>
+    <script src="library.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <h3>Search Product by Id</h3>
-    <p><input> <button>Search Product</button> </p>
-    <h3>Examined Product</h3>
-    <p>Product Id: <span>42</span></p>
-    <p>Price : <span>360.27</span></p>
-    <p>Type: <span>Clothing</span></p>
-
-    <h3>List of Similar Products</h3>
-    
-    <table border="1.5px" >
-        <thead>
-        <tr>
-            <th>ProductId</th>
-            <th>Type</th>
-            <th>Price</th>
-            <th>Examine</th>
-        </tr>
-        
-        </th>
-        </thead>
-        
-        <tbody>
+    <div>
+        <h3>Search Product by Id</h3>
+        <input type="text" id="input">
+        <button id="inputButton">Search Product</button>
+    </div>  
+    <div>
+        <h3>Examined Product</h3>
+        <p id="productText">Product Id:
+            <br>Price:
+            <br>Type: </p>
+        <h3>List of Similar Products</h3>
+        <table id="similarTable" width="300px" border="1">
             <tr>
-                <td>0</td>
-                <td>Electronics</td>
-                <td>750.00</td>
-                <td><button>Examine</button></td>
-            </tr>
-            <tr>
-                <td>0</td>
-                <td>Electronics</td>
-                <td>750.00</td>
-                <td>
-                    <button>Examine</button>
-                </td>
-            </tr>
-            <tr>
-                <td>0</td>
-                <td>Electronics</td>
-                <td>750.00</td>
-                <td>
-                    <button>Examine</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>List of All Products</h3>
-    <table border="1.5px">
-        <tr>
-            
                 <th>ProductId</th>
                 <th>Type</th>
                 <th>Price</th>
                 <th>Examine</th>
-            
-    
-        </tr>
-        <tbody>
-            <tr>
-                <td>0</td>
-                <td>Electronics</td>
-                <td>750.00</td>
-                <td>
-                    <button>Examine</button>
-                </td>
             </tr>
+        </table>
+    </div>
+    <div>
+        <h3>List of All Products</h3>
+        <table id="allTable" width="300px" border="1">
             <tr>
-                <td>0</td>
-                <td>Electronics</td>
-                <td>750.00</td>
-                <td>
-                    <button>Examine</button>
-                </td>
+                <th>ProductId</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Examine</th>
             </tr>
-            <tr>
-                <td>0</td>
-                <td>Electronics</td>
-                <td>750.00</td>
-                <td>
-                    <button>Examine</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        </table>
+    </div>
+
+    <script src="productCatalog.js"></script>
 </body>
 </html>
